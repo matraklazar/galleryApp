@@ -6,7 +6,6 @@ class RegisterUser{
     _email = faker.internet.email({firstName: this._firstName, lastName: this._lastName});
     _password = faker.internet.password();
 
-
     register(){
         cy.visit('register');
         cy.get('#first-name').type(this._firstName);
