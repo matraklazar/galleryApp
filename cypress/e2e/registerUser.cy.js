@@ -9,6 +9,9 @@ describe('Register user Tests',()=>{
 
     it('Successful user registration',()=>{
         regUser.register();
+        
+
+        //  Assertations
         cy.url().should('eql',Cypress.config('baseUrl'));
         cy.get('h1').should('contain','All Galleries');
     });
