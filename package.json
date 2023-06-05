@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/matraklazar/galleryApp#readme",
   "devDependencies": {
+    "@faker-js/faker": "^8.0.2",
     "cypress": "^12.13.0"
   }
 }
