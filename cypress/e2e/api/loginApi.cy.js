@@ -5,7 +5,7 @@ describe('Login via API',()=>{
     //     cy.loginViaApi();
     // });
 
-    it('Verify user landed on homepage',()=>{
+    it.only('Verify user landed on homepage',()=>{
         cy.loginViaApi();
         cy.visit(Cypress.config().baseUrl);
         cy.url().should('eql',Cypress.config().baseUrl);
